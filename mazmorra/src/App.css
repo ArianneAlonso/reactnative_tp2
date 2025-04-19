@@ -1,0 +1,75 @@
+/*7f95c4*/
+body {
+    font-family: Arial, sans-serif;
+    background-color: #7f95c4;
+    color: #333;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    padding: 20px;
+    background-color: #7f95c4;
+  }
+  
+  h1 {
+    font-size: 2.5em;
+    margin: 0;
+  }
+  
+  h2 {
+    font-size: 2em;
+    margin: 0;
+    color: #87cefa;
+  }
+  
+  .art-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .art-item {
+    background-color: #7f95c4;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    width: 320px;
+    transition: transform 0.3s ease-in-out;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  
+  .art-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .art-item:hover {
+    transform: translateY(-5px);
+  }
+  
+  .art-item p {
+    font-size: 1.1em;
+    padding: 10px;
+    color: #333;
+  }
+  
+  .art-info {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease, padding 0.5s ease;
+    padding: 0 10px;
+    background-color: #7f95c4;
+    font-size: 0.95em;
+    color: #444;
+  }
+  
+  .art-item.expanded .art-info {
+    max-height: 200px;
+    padding: 10px;
+  }
+  
